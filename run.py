@@ -69,7 +69,6 @@ def handle_message(event):
                 '學號：\n'
                 '手機：\n'
                 '地點：\n'
-                '收假方式：\n'
                 '----------\n'
                 '才會正確記錄回報。\n'
                 '[格式]\n'
@@ -98,7 +97,7 @@ def handle_message(event):
                 reportData[groupID].clear()
 
         elif '格式' in receivedmsg and len(receivedmsg)==2:
-            LineMessage = '姓名：\n學號：\n手機：\n地點：\n收假方式：'
+            LineMessage = '姓名：\n學號：\n手機：\n地點：'
         
         if LineMessage :
             message = TextSendMessage(text=LineMessage)
